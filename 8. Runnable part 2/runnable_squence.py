@@ -18,7 +18,12 @@ llm = ChatGoogleGenerativeAI(
 
 parser = StrOutputParser()
 
-chain = RunnableSequence(prompt | llm | parser)
+prompt1 = PromptTemplate(
+    template = 'Explain every jokes {jokes}',
+    input_variables =['jokes']
+)
+
+chain = RunnableSequence(prompt , llm , parser , prompt1 , llm , parser)
 
 result = chain.invoke({'topic' : 'Gen-AI'})
 
