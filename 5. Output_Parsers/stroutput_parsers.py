@@ -26,4 +26,4 @@ chain = template1 | llm | parser | template2 | llm | parser
 
 result = chain.invoke({'topic_name' : 'Generative-AI'})
 
-print(result)
+print(result)–

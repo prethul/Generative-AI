@@ -1,3 +1,4 @@
-import langchain 
+from langchain_google_genai import ChatGoogleGenerativeAI 
+from dotenv import load_dotenv 
 
-print(langchain.__version__)
+load_dotenv () 

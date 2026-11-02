@@ -22,3 +22,5 @@ print(result)
 
 # chain visulization 
 chain.get_graph().print_ascii()
+
+
